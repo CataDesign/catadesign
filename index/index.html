@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>index</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="hoja de estilos.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<header>
+  <h1>CataDesign</h1>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+
+
+<section class="hero">
+  <div class="hero-texto">
+    <h2>Bienvenido a mi portafolio</h2>
+    <p>Soy diseñadora visual y aquí puedes ver algunos de mis trabajos.</p>
+  </div>
+</section>
+	
+	
+	
+	
+<section id="sobre-mi">
+  <div class="sobre-mi-container">
+    <img src="img/fotopersonal.jpg" alt="Foto de Catalina" class="foto-personal" />
+    <div class="texto-sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>
+        Hola, soy Catalina Castillo, una apasionada del diseño visual. Me encanta transformar ideas en piezas gráficas como pósteres, logos, fotografia, impresos y ilustración. Busco siempre aprender, crear y dejar huella en cada proyecto.
+      </p>
+    </div>
+  </div>
+</section>
+
+	
+	
+	<main>
+  <!-- Sección 1 -->
+  <section id="proyectos1" class="proyectos">
+    <h2 class="titulo-proyecto">Fotografía</h2>
+    <div class="galeria">
+      <img src="img/proyecto 1.jpg" alt="Proyecto 1" onclick="mostrarImagen(this)">
+      <img src="img/proyecto 2.jpg" alt="Proyecto 2" onclick="mostrarImagen(this)">
+      <img src="img/proyecto 3.jpg" alt="Proyecto 3" onclick="mostrarImagen(this)">
+    </div>
+  </section>
+
+  <!-- Sección 2 -->
+  <section id="proyectos2" class="proyectos">
+    <h2 class="titulo-proyecto">Diseño Editorial</h2>
+    <div class="galeria">
+      <img src="img/proyecto 4.jpg" alt="Proyecto 4" onclick="mostrarImagen(this)">
+      <img src="img/proyecto 5.jpg" alt="Proyecto 5" onclick="mostrarImagen(this)">
+      <img src="img/proyecto 6.jpg" alt="Proyecto 6" onclick="mostrarImagen(this)">
+    </div>
+  </section>
+
+  <!-- Sección 3 -->
+  <section id="proyectos3" class="proyectos">
+    <h2 class="titulo-proyecto">Producción de Impresos</h2>
+    <div class="galeria">
+      <img src="img/proyecto 7.jpg" alt="Proyecto 7" onclick="mostrarImagen(this)">
+      <img src="img/proyecto 8.jpg" alt="Proyecto 8" onclick="mostrarImagen(this)">
+      <img src="img/proyecto 9.jpg" alt="Proyecto 9" onclick="mostrarImagen(this)">
+    </div>
+  </section>
+
+  <!-- Sección 4 -->
+  <section id="proyectos4" class="proyectos">
+    <h2 class="titulo-proyecto">Ilustración</h2>
+    <div class="galeria">
+      <img src="img/proyecto 10.jpg" alt="Proyecto 10" onclick="mostrarImagen(this)">
+      <img src="img/proyecto 11.jpg" alt="Proyecto 11" onclick="mostrarImagen(this)">
+      <img src="img/proyecto 12.jpg" alt="Proyecto 12" onclick="mostrarImagen(this)">
+    </div>
+  </section>
+
+  <!-- Sección 5 -->
+  <section id="proyectos5" class="proyectos">
+    <h2 class="titulo-proyecto">Marca</h2>
+    <div class="galeria">
+      <img src="img/proyecto 13.jpg" alt="Proyecto 13" onclick="mostrarImagen(this)">
+      <img src="img/proyecto 14.jpg" alt="Proyecto 14" onclick="mostrarImagen(this)">
+      <img src="img/proyecto 15.jpg" alt="Proyecto 15" onclick="mostrarImagen(this)">
+    </div>
+  </section>
+</main>
+
+<!-- Modal para imagen ampliada -->
+<div id="modalImagen" class="modal" onclick="cerrarImagen(event)">
+  <span class="cerrar" onclick="cerrarImagen(event)">&times;</span>
+  <img class="modal-contenido" id="imgAmpliada">
+</div>
+
+	
+
+<section id="contacto" class="contacto">
+  <h2>Contáctame</h2>
+  <p>Puedes escribirme a: <strong>catacasti.2005@gmail.com</strong></p>
+  <p>Instagram: <a href="https://instagram.com/catacl.20" target="_blank">@catacl.20</a></p>
+  <p>¡Estoy disponible para colaboraciones, trabajos o proyectos creativos!</p>
+</section>
+
+
+	
+	
+
+	
+	
+	
+<script>
+  function mostrarImagen(imagen) {
+    var modal = document.getElementById("modalImagen");
+    var imgAmpliada = document.getElementById("imgAmpliada");
+    modal.style.display = "flex";
+    imgAmpliada.src = imagen.src;
+  }
+
+  function cerrarImagen(event) {
+    var modal = document.getElementById("modalImagen");
+    if (event.target === modal || event.target.className === "cerrar") {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+<!-- Aquí iremos agregando el resto de la página -->
+
+</body>
+</html>
