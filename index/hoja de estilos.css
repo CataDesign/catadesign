@@ -1,7 +1,7 @@
 header {
   position: fixed;
   top: 0; left: 0; right: 0;
-  background-color: #1B0E20; /* barra navegación oscura */
+  background-color: #1B0E20; 
   padding: 20px 30px;
   display: flex;
   align-items: center;
@@ -9,7 +9,7 @@ header {
   color: #D1C0EC;
   z-index: 100;
   box-shadow: 0 2px 5px rgba(27, 14, 32, 0.7);
-  height: 70px; /* altura cómoda */
+  height: 70px;
 }
 
 header h1 {
@@ -39,20 +39,20 @@ nav a:hover {
 
 .hero {
   width: 100%;
-  height: 400px; /* puedes ajustar esta altura */
-  background-image: url('img/img1.jpg'); /* nombre del archivo de tu imagen */
+  height: 400px; 
+  background-image: url('img/img1.jpg'); 
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 60px; /* separa la imagen de la barra de navegación */
+  margin-top: 60px; 
 }
 
 .hero-texto {
-  background-color: rgba(27, 14, 32, 0.6); /* fondo oscuro semitransparente */
-  padding: 40px 60px; /* más espacio para que sea más rectangular */
-  border-radius: 0px; /* esquinas rectas */
+  background-color: rgba(27, 14, 32, 0.6); 
+  padding: 40px 60px; 
+  border-radius: 0px; 
   color: #D1C0EC;
   text-align: center;
   max-width: 800px;
@@ -60,12 +60,12 @@ nav a:hover {
 }
 
 .hero-texto h2 {
-  font-size: 40px; /* más grande */
+  font-size: 40px; 
   margin-bottom: 20px;
 }
 
 .hero-texto p {
-  font-size: 24px; /* más grande también */
+  font-size: 24px; 
   margin: 0;
 }
 
@@ -76,9 +76,9 @@ nav a:hover {
 
 
 
-/* SOBRE MÍ */
+
 #sobre-mi {
-  background-color: #8D77A8; /* lila intermedio */
+  background-color: #8D77A8; 
   padding: 60px 20px;
   color: #fff;
 }
@@ -98,7 +98,7 @@ nav a:hover {
   height: 180px;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #D1C0EC; /* lavanda claro */
+  border: 4px solid #D1C0EC; 
 }
 
 .texto-sobre-mi h2 {
@@ -112,7 +112,7 @@ nav a:hover {
 
 
 #sobre-mi {
-  background-color: #8D77A8; /* lila intermedio */
+  background-color: #8D77A8; 
   padding: 60px 20px;
   color: #fff;
 }
@@ -125,7 +125,7 @@ nav a:hover {
   gap: 40px;
   max-width: 1000px;
   margin: 0 auto;
-  flex-wrap: wrap; /* hace que se adapte en móviles */
+  flex-wrap: wrap; 
 }
 
 .foto-personal {
@@ -169,8 +169,8 @@ nav a:hover {
 .galeria img {
   width: 100%;
   max-width: 400px;
-  height: 280px; /* altura fija */
-  object-fit: cover; /* recorta la imagen para que llene el espacio sin deformarse */
+  height: 280px; 
+  object-fit: cover; 
   border-radius: 6px;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -220,14 +220,14 @@ nav a:hover {
 
 
 .contacto {
-  background-color: #1B0E20; /* fondo violeta oscuro */
-  color: #D1C0EC; /* texto lavanda */
+  background-color: #1B0E20; 
+  color: #D1C0EC; 
   padding: 60px 20px;
   text-align: center;
 }
 
 .contacto h2 {
-  color: #C4ADDD; /* título pastel */
+  color: #C4ADDD; 
   margin-bottom: 20px;
   font-size: 24px;
 }
@@ -238,13 +238,13 @@ nav a:hover {
 }
 
 .contacto a {
-  color: #8D77A8; /* enlaces lila */
+  color: #8D77A8; 
   text-decoration: none;
   font-weight: 600;
 }
 
 .contacto a:hover {
-  color: #D1C0EC; /* efecto hover lavanda */
+  color: #D1C0EC; 
 }
 
 
